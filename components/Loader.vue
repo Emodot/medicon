@@ -7,7 +7,6 @@
 <style scoped>
 .loader-ctn {
   width: 100%;
-  /* margin-top: 5%; */
 }
 .loader {
   border: 3px solid #f3f3f3;
