@@ -1,7 +1,7 @@
 <template>
   <div class="container">
     <div class="logo">
-      <img src="~assets/img/StartX-logo.png" alt="">
+      <img src="~assets/img/medicon-logo.png" alt="">
     </div>
     <div class="rhs">
       <div class="menu-container">
