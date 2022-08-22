@@ -1,5 +1,12 @@
 <template>
   <div class="main">
+    <!-- <vue-internet-checker
+      @status="status"
+      @event="event"
+    /> -->
+    <div class="sidemenu">
+      <SideMenu />
+    </div>
     <div>
       <div class="header-content">
         <Header
@@ -9,7 +16,7 @@
           @openLogout="openLogout = true"
         />
       </div>
-      <div class="mobile-menu come-down">
+      <div class="mobile-menu">
         <MobileMenu
           v-show="showMobileMenu"
           @closeMobileMenu="showMobileMenu = false"
@@ -21,61 +28,83 @@
           v-if="openLogout"
           @close-logout="openLogout = false"
         />
-        <!-- <Notification
+        <Notification
           v-if="openNotification"
           @close-notification="openNotification = false"
-        /> -->
+        />
       </div>
     </div>
   </div>
 </template>
 
 <script>
-// import Cookies from 'js-cookie'
+import Cookies from 'js-cookie'
+// import vueInternetChecker from 'vue-internet-checker'
 import Logout from '~/components/Modals/Logout.vue'
-// import Notification from '~/components/Modals/Notification.vue'
+import Notification from '~/components/Modals/Notification.vue'
 export default {
   name: 'MainLayout',
   components: {
-    Logout
-    // Notification
+    Logout,
+    Notification
+    // vueInternetChecker
   },
   data () {
     return {
       showMobileMenu: false,
       addNewContact: false,
       openNotification: false,
-      openLogout: false
+      openLogout: false,
+      trigger: false,
+      onLine: null
     }
   },
   watch: {
     $route () {
       this.showMobileMenu = false
-      // this.checkLoggedIn()
+      this.checkLoggedIn()
+      // this.checkInternet()
     }
   },
   created () {
     // this.checkLoggedIn()
+    // this.checkInternet()
   },
   methods: {
-    // checkLoggedIn () {
-    //   if (Cookies.get('token') === undefined) {
-    //     this.$router.push('/login?error=session has expired')
-    //   } else {
-    //     this.getUserDetails()
-    //   }
+    checkLoggedIn () {
+      if (Cookies.get('token') === undefined) {
+        this.$router.push('/login?error=session has expired')
+      } else {
+        this.getUserDetails()
+      }
+    },
+    getUserDetails () {
+      this.$axios.$get('/get_user_details', {
+        headers: {
+          Authorization: `Bearer ${Cookies.get('token')}`
+        }
+      }).then((response) => {
+        // console.log(response)
+        if (response.error && response.errorMsg === 'Authentication Failed') {
+          this.$router.push('/login?error=session has expired')
+        }
+      })
+    }
+    // status (ele) {
+    //   console.log(ele)
+    //   this.onLine = ele
     // },
-    // getUserDetails () {
-    //   this.$axios.$get('/get_user_details', {
-    //     headers: {
-    //       Authorization: `Bearer ${Cookies.get('token')}`
-    //     }
-    //   }).then((response) => {
-    //     // console.log(response)
-    //     if (response.error && response.errorMsg === 'Authentication Failed') {
-    //       this.$router.push('/login?error=session has expired')
-    //     }
-    //   })
+    // event (ele) {
+    //   console.log(ele)
+    // }
+
+    // checkInternet () {
+    //   if (navigator.onLine) {
+    //     this.connectionStatus = 'Connected to internet.'
+    //   } else {
+    //     this.connectionStatus = 'Unable to connect to internet.'
+    //   }
+    //   console.log(this.connectionStatus)
     // }
   }
 }
@@ -104,13 +133,14 @@ html {
 }
 
 .header-content {
+  margin-left: 18vw;
   z-index: 2;
 }
 
 .main-content {
-  margin-top: 100px;
-  /* margin-left: 18vw; */
-  width: 100vw;
+  margin-top: 9vh;
+  margin-left: 18vw;
+  width: 82vw;
 }
 
 .add-new-contact {
