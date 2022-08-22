@@ -133,7 +133,7 @@ html {
 }
 
 .header-content {
-  margin-left: 18vw;
+  margin-left: 17vw;
   z-index: 2;
 }
 

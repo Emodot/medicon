@@ -94,7 +94,6 @@ export default {
       challengersOnline: '0',
       newCampaignShow: false,
       campaignContactShow: false,
-      paystackkey: 'pk_test_xxxxxxxxxxxxxxxxxxxxxxx', // paystack public key
       email: 'foobar@example.com', // Customer email
       amount: 1000000, // in kobo
       overviewData: []
@@ -116,14 +115,6 @@ export default {
       } else {
         return `${splited[0]}`
       }
-    },
-    reference () {
-      let text = ''
-      const possible = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789'
-
-      for (let i = 0; i < 10; i++) { text += possible.charAt(Math.floor(Math.random() * possible.length)) }
-
-      return text
     }
   },
   watch: {
@@ -132,25 +123,9 @@ export default {
     }
   },
   created () {
-    this.getBalance()
     this.getUserDetails()
   },
   methods: {
-    getBalance () {
-      this.$axios.$get('/get_balance', {
-        headers: {
-          Authorization: `Bearer ${Cookies.get('token')}`
-        }
-      }).then((response) => {
-        this.loading = false
-        // console.log(response)
-        if (response.error && response.errorMsg === 'Authentication Failed') {
-          this.$router.push('/login?error=session has expired')
-        }
-        this.balance = response.balance.balance
-        this.$store.commit('setBalance', this.balance)
-      })
-    },
     getUserDetails () {
       this.$axios.$get('/get_user_details', {
         headers: {
@@ -166,31 +141,6 @@ export default {
     capitalizeFirstLetter (string) {
       return string.charAt(0).toUpperCase() + string.slice(1)
     },
-    callback (response) {
-      // console.log(response)
-    },
-    close () {
-      // console.log("Payment closed")
-    },
-    showMobileMenu () {
-      this.$emit('showMobileMenu')
-    },
-    handleNewCampaignShow () {
-      this.newCampaignShow = true
-    },
-    handleNewCampaignClose () {
-      this.newCampaignShow = false
-    },
-    handleContactsShow () {
-      this.campaignContactShow = true
-    },
-    handleContactClose () {
-      this.campaignContactShow = false
-    },
-    handleCampaignSubmit () {
-      this.handleNewCampaignClose()
-      this.handleContactsShow()
-    },
     formatNaira (num) {
       return '₦' + num.toString().replace(/(\d)(?=(\d{3})+(?!\d))/g, '$1,')
     }
@@ -205,7 +155,7 @@ export default {
   align-items: center;
   position: fixed;
   height: 9vh;
-  width: 82vw;
+  width: 83vw;
   background-color: #151C31;
   border-bottom: 1px solid rgba(226, 226, 234, 0.161);
   padding: 0 25px;
@@ -287,7 +237,7 @@ export default {
 }
 
 .title {
-  color: #1DA1F2;
+  color: #90BB6E;
   font-size: 13px;
   margin-bottom: 8px;
 }
@@ -306,7 +256,7 @@ export default {
   width: 7rem;
   height: 40px;
   /* padding: 0.8rem 0; */
-  background-color: #1DA1F2;
+  background-color: #90BB6E;
   margin: 0 40px;
   cursor: pointer;
   font-weight: 500;
