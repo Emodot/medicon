@@ -2,7 +2,7 @@
   <div class="mobile-menu">
     <div class="mobile-header">
       <div class="logo">
-        <img src="~assets/img/StartX-logo.png" alt="logo">
+        <img src="~assets/img/medicon-logo.png" alt="logo">
       </div>
 
       <div class="close" @click="closeMobileMenu">
