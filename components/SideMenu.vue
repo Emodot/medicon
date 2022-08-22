@@ -1,7 +1,7 @@
 <template>
   <div class="sidemenu-container">
     <div class="logo-box">
-      <img src="~assets/img/medicon-logo.png" alt="logo">
+      <img src="~assets/images/medicon-logo.png" alt="logo">
     </div>
     <div class="menu-list">
       <div class="menu-dropdown">
