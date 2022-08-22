@@ -9,10 +9,8 @@
           <NuxtLink to="/">
             <div class="inner">
               <div class="menu-icon">
-                <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M2.25 12.375L9 16.3125L15.75 12.375" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
-                  <path d="M2.25 9L9 12.9375L15.75 9" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
-                  <path d="M2.25 5.625L9 9.5625L15.75 5.625L9 1.6875L2.25 5.625Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M7.2192 2.20659C3.7856 2.20659 1 4.99059 1 8.42579C1 11.861 3.784 14.6466 7.2192 14.6466C10.6544 14.6466 13.4384 11.8626 13.4384 8.42579H7.2192V2.20659V2.20659ZM15 7.71379C15 5.99699 14.304 4.44179 13.1792 3.31699L8.7808 7.71379H15ZM8.0064 1.35059V7.56819L12.4032 3.17139C11.1888 1.95699 9.5968 1.35059 8.0064 1.35059V1.35059Z" fill="#90BB6E" />
                 </svg>
               </div>
               <p class="menu-header">
@@ -22,7 +20,7 @@
           </NuxtLink>
         </div>
       </div>
-      <div class="menu-dropdown">
+      <!-- <div class="menu-dropdown">
         <div :class="verify" class="menu-header-box" @click="verify = !verify">
           <div class="inner">
             <div class="menu-icon">
@@ -45,32 +43,10 @@
               </p>
             </div>
           </NuxtLink>
-          <!-- <NuxtLink to="/challenges/brand-challenge">
+          <NuxtLink to="/challenges/brand-challenge">
             <div class="inner">
               <p class="menu-text">
                 Brand Challenge
-              </p>
-            </div>
-          </NuxtLink> -->
-        </div>
-      </div>
-      <!-- <div class="menu-dropdown">
-        <div class="inner-menu">
-          <NuxtLink to="/weapon">
-            <div class="inner">
-              <div class="menu-icon">
-                <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M13.5 2.8125H4.5C3.56802 2.8125 2.8125 3.56802 2.8125 4.5V13.5C2.8125 14.432 3.56802 15.1875 4.5 15.1875H13.5C14.432 15.1875 15.1875 14.432 15.1875 13.5V4.5C15.1875 3.56802 14.432 2.8125 13.5 2.8125Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
-                  <path d="M6.46875 6.75C6.93474 6.75 7.3125 6.37224 7.3125 5.90625C7.3125 5.44026 6.93474 5.0625 6.46875 5.0625C6.00276 5.0625 5.625 5.44026 5.625 5.90625C5.625 6.37224 6.00276 6.75 6.46875 6.75Z" fill="white" />
-                  <path d="M11.5312 6.75C11.9972 6.75 12.375 6.37224 12.375 5.90625C12.375 5.44026 11.9972 5.0625 11.5312 5.0625C11.0653 5.0625 10.6875 5.44026 10.6875 5.90625C10.6875 6.37224 11.0653 6.75 11.5312 6.75Z" fill="white" />
-                  <path d="M6.46875 9.84375C6.93474 9.84375 7.3125 9.46599 7.3125 9C7.3125 8.53401 6.93474 8.15625 6.46875 8.15625C6.00276 8.15625 5.625 8.53401 5.625 9C5.625 9.46599 6.00276 9.84375 6.46875 9.84375Z" fill="white" />
-                  <path d="M11.5312 9.84375C11.9972 9.84375 12.375 9.46599 12.375 9C12.375 8.53401 11.9972 8.15625 11.5312 8.15625C11.0653 8.15625 10.6875 8.53401 10.6875 9C10.6875 9.46599 11.0653 9.84375 11.5312 9.84375Z" fill="white" />
-                  <path d="M6.46875 12.9375C6.93474 12.9375 7.3125 12.5597 7.3125 12.0938C7.3125 11.6278 6.93474 11.25 6.46875 11.25C6.00276 11.25 5.625 11.6278 5.625 12.0938C5.625 12.5597 6.00276 12.9375 6.46875 12.9375Z" fill="white" />
-                  <path d="M11.5312 12.9375C11.9972 12.9375 12.375 12.5597 12.375 12.0938C12.375 11.6278 11.9972 11.25 11.5312 11.25C11.0653 11.25 10.6875 11.6278 10.6875 12.0938C10.6875 12.5597 11.0653 12.9375 11.5312 12.9375Z" fill="white" />
-                </svg>
-              </div>
-              <p class="menu-header">
-                Weapon (Categories)
               </p>
             </div>
           </NuxtLink>
@@ -173,19 +149,19 @@ export default {
 
 <style scoped>
 .sidemenu-container {
-  width: 18vw;
+  width: 17vw;
   height: 100vh;
-  background-color: #01081E;
+  background-color: #fff;
   position: fixed;
 }
 
 .logo-box {
   /* background-color: white; */
-  height: 11%;
+  height: 11vh;
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
-  padding-top: 120px;
+  padding-left: 40px;
 }
 
 .logo-box img {
@@ -194,7 +170,6 @@ export default {
 }
 
 .menu-list {
-  margin-top: 7rem;
   padding: 54px 40px;
   height: 70%;
   overflow: auto;
@@ -221,8 +196,8 @@ export default {
 }
 
 .menu-header {
-  font-family: 'Rubik', sans-serif;
-  color: #fff;
+  font-weight: 700;
+  color: #82888D;
 }
 
 .inner {
@@ -239,21 +214,20 @@ export default {
 .inner:hover .menu-icon svg path,
 .inner:hover .menu-header,
 .inner:hover .menu-text {
-  /* fill: #1da0f2; */
-  stroke: #1DA1F2;
-  color: #1DA1F2;
+  fill: #90BB6E;
+  /* stroke: #90BB6E; */
+  color: #90BB6E;
 }
 
 a.nuxt-link-exact-active .menu-icon svg path,
 a.nuxt-link-exact-active .menu-header,
 a.nuxt-link-exact-active .menu-text {
-  /* fill: #1da0f2; */
-  stroke: #1DA1F2;
-  color: #1DA1F2;
+  fill: #90BB6E;
+  /* stroke: #90BB6E; */
+  color: #90BB6E;
 }
 
 .menu-text {
-  font-family: 'Rubik', sans-serif;
   color: rgba(255, 255, 255, 0.666);
   /* opacity: 70%; */
   margin-left: 30px;

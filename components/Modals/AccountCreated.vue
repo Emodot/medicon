@@ -115,7 +115,7 @@ export default {
 
 .span-account {
   font-size: 14px;
-  color: #1DA1F2;
+  color: #90BB6E;
   cursor: pointer;
   /* text-align: center;
   width: 60%;
@@ -157,8 +157,8 @@ input {
   width: 70%;
   height: 50px;
   background-color: #1da0f239;
-  border: 2px solid #1DA1F2;
-  color: #1DA1F2;
+  border: 2px solid #90BB6E;
+  color: #90BB6E;
   outline: none;
   cursor: pointer;
   border-radius: 5px;
