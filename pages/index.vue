@@ -103,4 +103,17 @@ export default {
 .dashboard-table {
   margin-top: 5rem;
 }
+
+@media only screen and (max-width: 500px) {
+  .container {
+    padding: 20px;
+  }
+  .cards {
+    flex-direction: column;
+  }
+
+  .card {
+    margin-bottom: 10px;
+  }
+}
 </style>
