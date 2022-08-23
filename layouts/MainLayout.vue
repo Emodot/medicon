@@ -62,7 +62,7 @@ export default {
   watch: {
     $route () {
       this.showMobileMenu = false
-      this.checkLoggedIn()
+      // this.checkLoggedIn()
       // this.checkInternet()
     }
   },
