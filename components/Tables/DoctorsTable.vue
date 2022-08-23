@@ -33,10 +33,7 @@
             Speciality
           </th>
           <th class="date">
-            Doctor
-          </th>
-          <th class="amount">
-            Condition
+            Gender
           </th>
           <th class="action-ctn" />
         </tr>
@@ -51,16 +48,13 @@
             {{ appointment.email }}
           </td>
           <td class="date">
-            {{ appointment.date }}
+            {{ appointment.phone }}
           </td>
           <td class="date">
-            {{ appointment.time }}
+            {{ appointment.speciality }}
           </td>
           <td class="date">
-            {{ appointment.doctor }}
-          </td>
-          <td class="date">
-            {{ appointment.condition }}
+            {{ appointment.gender }}
           </td>
           <td class="action-ctn">
             <div class="action">
@@ -101,82 +95,65 @@ export default {
           id: '#ND1283',
           name: 'Leslie Alexander',
           email: 'lesie.alexander@example.com',
-          date: '22, JAN. 2021',
-          time: '09:15-09:45am',
-          doctor: 'Dr. Jacob Jones',
-          condition: 'Mumps Stage II'
+          phone: '09099098788',
+          speciality: 'Gynecologist',
+          gender: 'Male'
         },
         {
           id: '#ND1283',
           name: 'Ronald Richards',
           email: 'ronald.richards@example.com',
-          date: '22, JAN. 2021',
-          time: '12:00-12:45pm',
-          doctor: 'Dr. Theresa Webb',
-          condition: 'Depression'
+          phone: '09099098788',
+          speciality: 'Dentist',
+          gender: 'Female'
         },
         {
           id: '#ND1283',
           name: 'Leslie Alexander',
           email: 'lesie.alexander@example.com',
-          date: '22, JAN. 2021',
-          time: '09:15-09:45am',
-          doctor: 'Dr. Jacob Jones',
-          condition: 'Mumps Stage II'
+          phone: '09099098788',
+          speciality: 'Gynecologist',
+          gender: 'Male'
         },
         {
           id: '#ND1283',
           name: 'Ronald Richards',
           email: 'ronald.richards@example.com',
-          date: '22, JAN. 2021',
-          time: '12:00-12:45pm',
-          doctor: 'Dr. Theresa Webb',
-          condition: 'Depression'
+          phone: '09099098788',
+          speciality: 'Dentist',
+          gender: 'Female'
         },
         {
           id: '#ND1283',
           name: 'Leslie Alexander',
           email: 'lesie.alexander@example.com',
-          date: '22, JAN. 2021',
-          time: '09:15-09:45am',
-          doctor: 'Dr. Jacob Jones',
-          condition: 'Mumps Stage II'
+          phone: '09099098788',
+          speciality: 'Gynecologist',
+          gender: 'Male'
         },
         {
           id: '#ND1283',
           name: 'Ronald Richards',
           email: 'ronald.richards@example.com',
-          date: '22, JAN. 2021',
-          time: '12:00-12:45pm',
-          doctor: 'Dr. Theresa Webb',
-          condition: 'Depression'
+          phone: '09099098788',
+          speciality: 'Dentist',
+          gender: 'Female'
         },
         {
           id: '#ND1283',
           name: 'Leslie Alexander',
           email: 'lesie.alexander@example.com',
-          date: '22, JAN. 2021',
-          time: '09:15-09:45am',
-          doctor: 'Dr. Jacob Jones',
-          condition: 'Mumps Stage II'
+          phone: '09099098788',
+          speciality: 'Gynecologist',
+          gender: 'Male'
         },
         {
           id: '#ND1283',
           name: 'Ronald Richards',
           email: 'ronald.richards@example.com',
-          date: '22, JAN. 2021',
-          time: '12:00-12:45pm',
-          doctor: 'Dr. Theresa Webb',
-          condition: 'Depression'
-        },
-        {
-          id: '#ND1283',
-          name: 'Leslie Alexander',
-          email: 'lesie.alexander@example.com',
-          date: '22, JAN. 2021',
-          time: '09:15-09:45am',
-          doctor: 'Dr. Jacob Jones',
-          condition: 'Mumps Stage II'
+          phone: '09099098788',
+          speciality: 'Dentist',
+          gender: 'Female'
         }
       ]
     }
