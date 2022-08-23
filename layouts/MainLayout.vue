@@ -134,7 +134,7 @@ html {
 
 .header-content {
   margin-left: 17vw;
-  z-index: 2;
+  z-index: 4;
 }
 
 .main-content {

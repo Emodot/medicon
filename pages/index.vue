@@ -1,5 +1,63 @@
 <template>
-  <div />
+  <div class="container">
+    <div class="cards">
+      <div class="card">
+        <div class="card-img">
+          <img src="~assets/images/first aid.png" alt="">
+        </div>
+        <div class="card-details">
+          <p class="card-name">
+            Appointments
+          </p>
+          <p class="card-num">
+            213
+          </p>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-img">
+          <img src="~assets/images/crutch.png" alt="">
+        </div>
+        <div class="card-details">
+          <p class="card-name">
+            New Patients
+          </p>
+          <p class="card-num">
+            104
+          </p>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-img">
+          <img src="~assets/images/operation theater.png" alt="">
+        </div>
+        <div class="card-details">
+          <p class="card-name">
+            On Admission
+          </p>
+          <p class="card-num">
+            24
+          </p>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-img">
+          <img src="~assets/images/UserCirclePlus.png" alt="">
+        </div>
+        <div class="card-details">
+          <p class="card-name">
+            Doctors
+          </p>
+          <p class="card-num">
+            7
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="dashboard-table">
+      <TablesDashboardTable />
+    </div>
+  </div>
 </template>
 
 <script>
@@ -7,3 +65,42 @@ export default {
   layout: 'MainLayout'
 }
 </script>
+
+<style scoped>
+
+.container {
+  padding: 50px;
+}
+
+.cards {
+  display: flex;
+  justify-content: space-between;
+}
+
+.card {
+  flex-basis: 24%;
+  padding: 24px;
+  display: flex;
+  background-color: #fff;
+  border-radius: 8px;
+}
+
+.card-img {
+  margin-right: 15px;
+}
+
+.card-name {
+  color: #82888D;
+  font-weight: 600;
+}
+
+.card-num {
+  color: #90BB6E;
+  font-size: 24px;
+  margin-top: 10px;
+}
+
+.dashboard-table {
+  margin-top: 5rem;
+}
+</style>
