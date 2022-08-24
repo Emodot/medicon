@@ -14,14 +14,14 @@
       <nuxt-link to="/">
         Dashboard
       </nuxt-link>
-      <nuxt-link to="/profile-data">
-        Profile Data
+      <nuxt-link to="/appointments">
+        Appointments
       </nuxt-link>
-      <nuxt-link to="/subscription">
-        Subscription
+      <nuxt-link to="/doctors">
+        Doctors
       </nuxt-link>
-      <nuxt-link to="/transactions">
-        Transactions
+      <nuxt-link to="/patients">
+        Patients
       </nuxt-link>
       <nuxt-link to="/settings">
         Settings
@@ -48,6 +48,7 @@ export default {
   background-color: white;
   position: fixed;
   width: 100%;
+  padding-top: 25px;
 }
 
 .mobile-header {
@@ -56,11 +57,11 @@ export default {
   justify-content: space-between;
   align-items: center;
   width: 100%;
-  padding: 0 30px;
+  padding: 0 50px;
 }
 
 .logo img {
-  width: 5rem;
+  width: 100px;
 }
 
 .middle-section {
