@@ -1,12 +1,11 @@
 <template>
   <div class="container">
     <p class="page-title">
-      Appointments
+      Patients
     </p>
     <div class="dashboard-table">
-      <TablesAppointmentTable />
+      <TablesPatientsTable />
     </div>
-    <ModalsEditAppointment />
   </div>
 </template>
 

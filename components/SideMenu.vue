@@ -93,7 +93,7 @@
       </div>
       <div class="menu-dropdown">
         <div class="inner-menu">
-          <NuxtLink to="/transactions">
+          <NuxtLink to="#">
             <div class="inner">
               <div class="menu-icon">
                 <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -116,7 +116,7 @@
       </div>
       <div class="menu-dropdown">
         <div class="inner-menu">
-          <NuxtLink to="/withdraw">
+          <NuxtLink to="/patients">
             <div class="inner">
               <div class="menu-icon">
                 <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
