@@ -222,7 +222,7 @@ export default {
   background-color: #fafafa;
   display: flex;
   width: 25rem;
-  padding-left: 15px;
+  padding: 0 15px;
   border-radius: 100px;
 }
 
@@ -231,6 +231,7 @@ export default {
 }
 
 .search-input {
+  width: 100%;
   border: none;
   background-color: transparent;
   outline: none;
