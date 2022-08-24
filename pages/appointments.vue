@@ -4,15 +4,20 @@
       Appointments
     </p>
     <div class="dashboard-table">
-      <TablesAppointmentTable />
+      <TablesAppointmentTable @edit-user="editAppointment = true" />
     </div>
-    <ModalsEditAppointment />
+    <ModalsEditAppointment v-if="editAppointment" @close-modal="editAppointment = false" />
   </div>
 </template>
 
 <script>
 export default {
-  layout: 'MainLayout'
+  layout: 'MainLayout',
+  data () {
+    return {
+      editAppointment: false
+    }
+  }
 }
 </script>
 

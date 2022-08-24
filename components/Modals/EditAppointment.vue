@@ -1,9 +1,16 @@
 <template>
-  <div class="modal-backdrop-2">
-    <div class="modal-2">
+  <div class="modal-backdrop-2" @click="$emit('close-modal')">
+    <div class="modal-2" @click.stop>
       <div class="top-modal">
         <p>Edit appointment</p>
-        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <svg
+          width="24"
+          height="24"
+          viewBox="0 0 24 24"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+          @click="$emit('close-modal')"
+        >
           <rect
             x="2"
             y="2"
@@ -16,6 +23,55 @@
         </svg>
       </div>
       <hr class="line">
+      <div class="form">
+        <div class="input-box">
+          <p class="label">
+            Patient’s Name
+          </p>
+          <input v-model="patient_name" class="text-input" type="text">
+        </div>
+        <div class="input-box">
+          <p class="label">
+            Doctor’s Name
+          </p>
+          <input v-model="doctor_name" class="text-input" type="text">
+        </div>
+        <div class="input-box">
+          <p class="label">
+            Email Address
+          </p>
+          <input v-model="email" class="text-input" type="email">
+        </div>
+        <div class="input-ctn">
+          <div class="input-box l-box">
+            <p class="label">
+              Date
+            </p>
+            <input v-model="date" class="text-input" type="date">
+          </div>
+          <div class="input-box r-box">
+            <p class="label">
+              Time
+            </p>
+            <input v-model="time" class="text-input" type="time">
+          </div>
+        </div>
+        <div class="input-box">
+          <p class="label">
+            Phone Number
+          </p>
+          <input v-model="phone" class="text-input" type="text">
+        </div>
+        <div class="input-box">
+          <p class="label">
+            Reason
+          </p>
+          <input v-model="reason" class="text-input" type="text">
+        </div>
+        <button class="save-btn">
+          Save Appointment
+        </button>
+      </div>
     </div>
   </div>
 </template>
@@ -30,7 +86,13 @@ export default {
   },
   data () {
     return {
-      // userEmail: ''
+      patient_name: '',
+      doctor_name: '',
+      email: '',
+      date: '',
+      time: '',
+      phone: '',
+      reason: ''
     }
   }
 }
@@ -78,9 +140,67 @@ export default {
   font-weight: 600;
 }
 
+.top-modal svg {
+  cursor: pointer;
+}
+
 .line {
   border: none;
   border-top: 1px solid rgba(0, 0, 0, 0.162);
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.input-ctn {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.input-box {
+  margin-bottom: 15px;
+}
+
+.l-box {
+  width: 48%;
+}
+
+.r-box {
+  width: 48%;
+}
+
+.l-box {
+  width: 48%;
+}
+
+.label {
+  font-size: 15px;
+  font-weight: 500;
+}
+
+.text-input {
+  border: 1px solid rgba(0, 0, 0, 0.336);
+  background-color: transparent;
+  outline: none;
+  padding: 0 15px;
+  width: 100%;
+  height: 45px;
+  margin-top: 7px;
+  border-radius: 10px;
+}
+
+.save-btn {
+  border: none;
+  outline: none;
+  height: 50px;
+  width: 100%;
+  background-color: #90BB6E;
+  color: #fff;
+  font-weight: 500;
+  font-size: 14px;
+  border-radius: 10px;
+  margin-top: 40px;
+  cursor: pointer;
 }
 
 @media only screen and (max-width: 900px) {
