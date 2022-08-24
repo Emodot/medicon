@@ -104,6 +104,17 @@ export default {
   margin-top: 5rem;
 }
 
+@media only screen and (max-width: 900px) {
+  .cards {
+    flex-wrap: wrap;
+  }
+
+  .card {
+    flex-basis: 48%;
+    margin-bottom: 20px;
+  }
+}
+
 @media only screen and (max-width: 500px) {
   .container {
     padding: 20px;
