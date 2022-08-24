@@ -36,7 +36,7 @@
             Doctor
           </th>
           <th class="amount">
-            Condition
+            Reason
           </th>
           <th class="action-ctn" />
         </tr>
