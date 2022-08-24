@@ -26,21 +26,15 @@
       <div class="form">
         <div class="input-box">
           <p class="label">
-            Patient’s Name
+            Reason
           </p>
-          <input v-model="patient_name" class="text-input" type="text">
+          <input v-model="reason" class="text-input" type="text">
         </div>
         <div class="input-box">
           <p class="label">
             Doctor’s Name
           </p>
           <input v-model="doctor_name" class="text-input" type="text">
-        </div>
-        <div class="input-box">
-          <p class="label">
-            Email Address
-          </p>
-          <input v-model="email" class="text-input" type="email">
         </div>
         <div class="input-ctn">
           <div class="input-box l-box">
@@ -61,12 +55,6 @@
             Phone Number
           </p>
           <input v-model="phone" class="text-input" type="text">
-        </div>
-        <div class="input-box">
-          <p class="label">
-            Reason
-          </p>
-          <input v-model="reason" class="text-input" type="text">
         </div>
         <button class="save-btn">
           Save Appointment

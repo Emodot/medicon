@@ -5,11 +5,11 @@
     </div>
     <div v-else class="table-container">
       <div class="table-top">
-        <!-- <p class="table-title">
-          Appointment Activity
-        </p> -->
+        <p class="table-title">
+          Visit History
+        </p>
         <div class="search-box">
-          <input type="text" class="search-input" placeholder="Search Patients...">
+          <input type="text" class="search-input" placeholder="Search...">
         </div>
         <!-- <p class="view-all" @click="$router.push('/subscriptions')">
           View All
@@ -18,45 +18,36 @@
       <table>
         <tr class="table-header">
           <th class="id">
-            Patient ID
+            Visit ID
           </th>
           <th class="domain">
-            Name
+            Reason
           </th>
           <th class="email">
-            Email
+            Attended By
           </th>
           <th class="date">
-            Phone
+            Date
           </th>
           <th class="date">
-            Date Registered
-          </th>
-          <th class="date">
-            Gender
-          </th>
-          <th class="date">
-            Status
+            Time
           </th>
         </tr>
-        <tr v-for="(appointment, index) in appointments" :key="index" class="table-details" @click="$router.push('/patients/details')">
+        <tr v-for="(appointment, index) in appointments" :key="index" class="table-details">
           <td class="id">
             {{ appointment.id }}
           </td>
           <td class="domain">
-            {{ appointment.name }}
+            {{ appointment.reason }}
           </td>
           <td class="email">
-            {{ appointment.email }}
-          </td>
-          <td class="date">
-            {{ appointment.phone }}
+            {{ appointment.attended }}
           </td>
           <td class="date">
             {{ appointment.date }}
           </td>
           <td class="date">
-            {{ appointment.gender }}
+            {{ appointment.time }}
           </td>
           <!-- <td class="action-ctn">
             <div class="action">
@@ -75,9 +66,9 @@
               </svg>
             </div>
           </td> -->
-          <td class="type-details" :class="appointment.status === 'Admitted' ? 'success' : '' ">
+          <!-- <td class="type-details" :class="appointment.status === 'Admitted' ? 'success' : '' ">
             {{ appointment.status }}
-          </td>
+          </td> -->
         </tr>
       </table>
     </div>
@@ -95,75 +86,59 @@ export default {
       appointments: [
         {
           id: '#ND1283',
-          name: 'Leslie Alexander',
-          email: 'lesie.alexander@example.com',
-          phone: '09099098788',
+          reason: 'Appointment',
+          attended: 'Dr Johnson',
           date: '22, JAN. 2021',
-          gender: 'Male',
-          status: 'Admitted'
+          time: '02:21pm'
         },
         {
           id: '#ND1283',
-          name: 'Ronald Richards',
-          email: 'ronald.richards@example.com',
-          phone: '09099098788',
+          reason: 'Treatment',
+          attended: 'Dr Johnson',
           date: '22, JAN. 2021',
-          gender: 'Female',
-          status: 'Not Admitted'
+          time: '02:21pm'
         },
         {
           id: '#ND1283',
-          name: 'Leslie Alexander',
-          email: 'lesie.alexander@example.com',
-          phone: '09099098788',
+          reason: 'Appointment',
+          attended: 'Dr Johnson',
           date: '22, JAN. 2021',
-          gender: 'Male',
-          status: 'Admitted'
+          time: '02:21pm'
         },
         {
           id: '#ND1283',
-          name: 'Ronald Richards',
-          email: 'ronald.richards@example.com',
-          phone: '09099098788',
+          reason: 'Treatment',
+          attended: 'Dr Johnson',
           date: '22, JAN. 2021',
-          gender: 'Female',
-          status: 'Not Admitted'
+          time: '02:21pm'
         },
         {
           id: '#ND1283',
-          name: 'Leslie Alexander',
-          email: 'lesie.alexander@example.com',
-          phone: '09099098788',
+          reason: 'Appointment',
+          attended: 'Dr Johnson',
           date: '22, JAN. 2021',
-          gender: 'Male',
-          status: 'Admitted'
+          time: '02:21pm'
         },
         {
           id: '#ND1283',
-          name: 'Ronald Richards',
-          email: 'ronald.richards@example.com',
-          phone: '09099098788',
+          reason: 'Treatment',
+          attended: 'Dr Johnson',
           date: '22, JAN. 2021',
-          gender: 'Female',
-          status: 'Not Admitted'
+          time: '02:21pm'
         },
         {
           id: '#ND1283',
-          name: 'Leslie Alexander',
-          email: 'lesie.alexander@example.com',
-          phone: '09099098788',
+          reason: 'Appointment',
+          attended: 'Dr Johnson',
           date: '22, JAN. 2021',
-          gender: 'Male',
-          status: 'Admitted'
+          time: '02:21pm'
         },
         {
           id: '#ND1283',
-          name: 'Ronald Richards',
-          email: 'ronald.richards@example.com',
-          phone: '09099098788',
+          reason: 'Treatment',
+          attended: 'Dr Johnson',
           date: '22, JAN. 2021',
-          gender: 'Female',
-          status: 'Not Admitted'
+          time: '02:21pm'
         }
       ]
     }
@@ -194,11 +169,11 @@ export default {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 30px 30px;
+  padding: 20px 30px;
 }
 
 .table-title {
-  font-size: 22px;
+  font-size: 18px;
   font-weight: 700;
   color: #000000;
 }
@@ -232,10 +207,10 @@ export default {
   margin-top: 100px;
 }
 .table-container {
-  background-color: #ffffff;
+  /* background-color: #fffbfb; */
   border-radius: 10px;
   width: 100%;
-  /* border: 1px solid #1A240; */
+  border: 1px solid #eeeeee;
 }
 table, th, td {
   width: 100%;
@@ -256,7 +231,6 @@ table, th, td {
 .table-details {
   height: 60px;
   padding: 0 20px;
-  cursor: pointer;
 }
 .table-details:nth-child(odd) {
   height: 60px;

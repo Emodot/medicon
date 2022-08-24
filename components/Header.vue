@@ -124,7 +124,7 @@ export default {
   position: fixed;
   height: 11vh;
   width: 83vw;
-  /* background-color: #151C31; */
+  background-color: #f2f5fb;
   border-bottom: 1px solid rgba(226, 226, 234, 0.161);
   padding: 0 25px;
   z-index: 5;

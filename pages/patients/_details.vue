@@ -1,14 +1,14 @@
 <template>
   <div class="container">
+    <div class="back" @click="$router.go(-1)">
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path opacity="0.4" d="M12.0001 22.0002C6.48509 22.0002 2.00009 17.5142 2.00009 12.0002C2.00009 6.48621 6.48509 2.00021 12.0001 2.00021C17.5141 2.00021 22.0001 6.48621 22.0001 12.0002C22.0001 17.5142 17.5141 22.0002 12.0001 22.0002Z" fill="#474680" />
+        <path d="M13.4425 16.2209C13.2515 16.2209 13.0595 16.1479 12.9135 16.0019L9.42649 12.5319C9.28549 12.3909 9.20649 12.1999 9.20649 11.9999C9.20649 11.8009 9.28549 11.6099 9.42649 11.4689L12.9135 7.99692C13.2065 7.70492 13.6805 7.70492 13.9735 7.99892C14.2655 8.29292 14.2645 8.76792 13.9715 9.05992L11.0185 11.9999L13.9715 14.9399C14.2645 15.2319 14.2655 15.7059 13.9735 15.9999C13.8275 16.1479 13.6345 16.2209 13.4425 16.2209Z" fill="#474680" fill-opacity="0.5" />
+      </svg>
+      <p>Back</p>
+    </div>
     <div class="inner">
       <div class="patient-details">
-        <div class="back">
-          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path opacity="0.4" d="M12.0001 22.0002C6.48509 22.0002 2.00009 17.5142 2.00009 12.0002C2.00009 6.48621 6.48509 2.00021 12.0001 2.00021C17.5141 2.00021 22.0001 6.48621 22.0001 12.0002C22.0001 17.5142 17.5141 22.0002 12.0001 22.0002Z" fill="#474680" />
-            <path d="M13.4425 16.2209C13.2515 16.2209 13.0595 16.1479 12.9135 16.0019L9.42649 12.5319C9.28549 12.3909 9.20649 12.1999 9.20649 11.9999C9.20649 11.8009 9.28549 11.6099 9.42649 11.4689L12.9135 7.99692C13.2065 7.70492 13.6805 7.70492 13.9735 7.99892C14.2655 8.29292 14.2645 8.76792 13.9715 9.05992L11.0185 11.9999L13.9715 14.9399C14.2645 15.2319 14.2655 15.7059 13.9735 15.9999C13.8275 16.1479 13.6345 16.2209 13.4425 16.2209Z" fill="#474680" fill-opacity="0.5" />
-          </svg>
-          <p>Back</p>
-        </div>
         <div class="top-block">
           <p class="title">
             David Emaye’s File <span class="adm">(Patient is not on Admission)</span>
@@ -171,51 +171,55 @@
           <div
             :class="activeTab.includes('visit') ? 'active' : 'inactive'"
             class="tab"
-            @click="activeTab = 'personal'"
+            @click="activeTab = 'visit'"
           >
             Visit History
           </div>
           <div
             :class="activeTab.includes('appointments') ? 'active' : 'inactive'"
             class="tab"
-            @click="activeTab = 'business'"
+            @click="activeTab = 'appointments'"
           >
             Appointments
           </div>
           <div
             :class="activeTab.includes('admissions') ? 'active' : 'inactive'"
             class="tab"
-            @click="activeTab = 'other'"
+            @click="activeTab = 'admissions'"
           >
             Admissions
           </div>
           <div
             :class="activeTab.includes('vitals') ? 'active' : 'inactive'"
             class="tab"
-            @click="activeTab = 'other'"
+            @click="activeTab = 'vitals'"
           >
             Vitals
           </div>
           <div
             :class="activeTab.includes('complaints') ? 'active' : 'inactive'"
             class="tab"
-            @click="activeTab = 'other'"
+            @click="activeTab = 'complaints'"
           >
             Complaints
           </div>
           <div
             :class="activeTab.includes('note') ? 'active' : 'inactive'"
             class="tab"
-            @click="activeTab = 'other'"
+            @click="activeTab = 'note'"
           >
             Doctor’s Note
           </div>
         </div>
         <div v-if="activeTab == 'visit'" class="tab-1">
-          <FormsPersonalInfo />
+          <TablesVisitHistoryTable />
+        </div>
+        <div v-if="activeTab == 'appointments'" class="tab-1">
+          <TablesAppointmentDetailsTable @edit-user="editAppointment = true" />
         </div>
       </div>
     </div>
+    <ModalsPatientEditAppointment v-if="editAppointment" @close-modal="editAppointment = false" />
   </div>
 </template>
 
@@ -224,7 +228,8 @@ export default {
   layout: 'MainLayout',
   data () {
     return {
-      activeTab: 'personal'
+      activeTab: 'visit',
+      editAppointment: false
     }
   }
 }
@@ -235,13 +240,21 @@ export default {
   padding: 30px;
 }
 
-.patient-details {
+.inner {
+  background-color: #fff;
+  padding: 30px;
+  border-radius: 20px;
   width: 90%;
 }
+
+/* .patient-details {
+
+} */
 
 .back {
   display: flex;
   align-items: center;
+  margin-bottom: 30px;
 }
 
 .back svg {
@@ -253,7 +266,6 @@ export default {
 }
 
 .top-block {
-  margin-top: 30px;
   margin-bottom: 40px;
   display: flex;
   justify-content: space-between;
@@ -351,5 +363,28 @@ export default {
   margin-top: 7px;
   line-height: 20px;
   color: #000000;
+}
+
+/* MEDICAL DETAILS */
+.medical-details .active {
+  color: #90BB6E !important;
+  border-bottom: 3px solid #90BB6E;
+}
+
+.inner-tab {
+  display: flex;
+  margin-top: 50px;
+  border-bottom: 1px solid #a8a8ad6e;
+}
+
+.medical-details .tab{
+  padding: 15px;
+  cursor: pointer;
+  margin-right: 70px;
+  color: #777777;
+}
+
+.tab-1 {
+  padding-top: 3rem;
 }
 </style>

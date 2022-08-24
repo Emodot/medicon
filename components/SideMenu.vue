@@ -91,7 +91,7 @@
           </NuxtLink>
         </div>
       </div>
-      <div class="menu-dropdown">
+      <!-- <div class="menu-dropdown">
         <div class="inner-menu">
           <NuxtLink to="#">
             <div class="inner">
@@ -113,7 +113,7 @@
             </div>
           </NuxtLink>
         </div>
-      </div>
+      </div> -->
       <div class="menu-dropdown">
         <div class="inner-menu">
           <NuxtLink to="/patients">
