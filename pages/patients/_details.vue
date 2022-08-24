@@ -217,6 +217,9 @@
         <div v-if="activeTab == 'appointments'" class="tab-1">
           <TablesAppointmentDetailsTable @edit-user="editAppointment = true" />
         </div>
+        <div v-if="activeTab == 'admissions'" class="tab-1">
+          <TablesAdmissionTable />
+        </div>
       </div>
     </div>
     <ModalsPatientEditAppointment v-if="editAppointment" @close-modal="editAppointment = false" />

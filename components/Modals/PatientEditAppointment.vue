@@ -1,5 +1,5 @@
 <template>
-  <div class="modal-backdrop-2" @click="$emit('close-modal')">
+  <div class="modal-backdrop-2 come-down" @click="$emit('close-modal')">
     <div class="modal-2" @click.stop>
       <div class="top-modal">
         <p>Edit appointment</p>
