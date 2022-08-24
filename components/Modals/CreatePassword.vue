@@ -89,7 +89,7 @@ export default {
           Authorization: `Bearer ${Cookies.get('token')}`
         }
       }).then((response) => {
-        console.log(response)
+        // console.log(response)
         if (!response.error) {
           this.$toast.success(response.statusText)
           this.window.location.reload()

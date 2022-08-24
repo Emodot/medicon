@@ -31,11 +31,11 @@
           <path d="M3.34025 5.70145C3.30642 5.66849 3.16175 5.54404 3.04275 5.42811C2.29433 4.74846 1.06933 2.97544 0.695417 2.04745C0.635333 1.90652 0.508167 1.55021 0.5 1.35984C0.5 1.17742 0.542 1.00353 0.627167 0.837596C0.746167 0.630744 0.933417 0.464808 1.1545 0.373884C1.30792 0.315352 1.767 0.224428 1.77517 0.224428C2.27742 0.133504 3.0935 0.0834961 3.99533 0.0834961C4.85458 0.0834961 5.63742 0.133504 6.14725 0.207948C6.15542 0.216472 6.72592 0.307396 6.92133 0.406844C7.27833 0.58926 7.5 0.945568 7.5 1.32688V1.35984C7.49125 1.60818 7.26958 2.13042 7.26142 2.13042C6.88692 3.0084 5.722 4.7405 4.94792 5.43664C4.94792 5.43664 4.749 5.63269 4.62475 5.71793C4.44625 5.85091 4.22517 5.91683 4.00408 5.91683C3.75733 5.91683 3.5275 5.84239 3.34025 5.70145Z" fill="#90BB6E" />
         </svg>
       </div>
-    </div>
-    <div class="hamburger" @click="showMobileMenu">
-      <span class="bar" />
-      <span class="bar" />
-      <span class="bar" />
+      <div class="hamburger" @click="showMobileMenu">
+        <span class="bar" />
+        <span class="bar" />
+        <span class="bar" />
+      </div>
     </div>
   </div>
 </template>
@@ -225,10 +225,13 @@ export default {
   width: 25px;
   height: 2px;
   margin: 5px auto;
-  background-color: #fff;
+  background-color: rgb(33, 33, 33);
 }
 
 @media only screen and (max-width: 900px) {
+.search-ctn {
+  margin-left: 30px;
+}
 .header-container {
   width: 100vw;
   padding: 15px 50px;
@@ -244,7 +247,11 @@ export default {
 }
 
 .mobile-logo img {
-  width: 80px;
+  width: 100px;
+}
+
+.notification {
+  margin-right: 0;
 }
 
 .hamburger {
