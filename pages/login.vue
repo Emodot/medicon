@@ -37,7 +37,7 @@
             <span class="btn-text">Sign In</span>
           </button>
           <div class="bottom-text">
-            <p class="forgot">
+            <p class="forgot" @click="resetPassword = true">
               Forgot Password?
             </p>
             <p class="no-account">
@@ -48,6 +48,8 @@
       </div>
       <div class="rhs" />
     </div>
+    <ModalsResetPassword v-if="resetPassword" @sentInst="sentInst" @close-modal="resetPassword = false" />
+    <ModalsLinkSent v-if="linkSent" />
   </div>
 </template>
 
@@ -55,12 +57,18 @@
 export default {
   data () {
     return {
-      checked: false
+      checked: false,
+      resetPassword: false,
+      linkSent: false
     }
   },
   methods: {
     toogleCheck () {
       this.checked = !this.checked
+    },
+    sentInst () {
+      this.resetPassword = false
+      this.linkSent = true
     }
   }
 }
