@@ -81,6 +81,7 @@ export default {
     },
     resetPassword () {
       this.loading = true
+      this.$router.push('/')
       this.$axios.$post('/reset_password', {
         resetCode: this.code,
         newpassword: this.password
