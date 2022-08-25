@@ -1,5 +1,5 @@
 <template>
-  <div class="modal-backdrop-2">
+  <div class="modal-backdrop-2 come-down">
     <div class="modal-2">
       <div class="modal-icon">
         <img src="~assets/icons/settings.svg" alt="">
@@ -51,6 +51,7 @@ export default {
   methods: {
     forgotPassword () {
       this.loading = true
+      this.$emit('sentInst', this.email)
       this.$axios.$post('/forgot_password', {
         email: this.email
       }, {
@@ -73,7 +74,7 @@ export default {
 
 <style scoped>
 * {
-  font-family: 'Poppins', sans-serif;
+  /* font-family: 'Poppins', sans-serif; */
   color: #454545;
 }
 .modal-backdrop-2 {
