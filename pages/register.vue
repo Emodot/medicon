@@ -6,12 +6,18 @@
           <img src="~assets/images/medicon-logo.png" alt="">
         </div>
         <p class="title">
-          Sign In
+          Sign Up
         </p>
         <p class="sub-title">
-          Sign in to access your Account
+          Create an Account
         </p>
         <div class="form">
+          <div class="input-box">
+            <p class="label">
+              Name
+            </p>
+            <input v-model="text" class="text-input" placeholder="Name" type="email">
+          </div>
           <div class="input-box">
             <p class="label">
               Email Address
@@ -22,9 +28,9 @@
             <p class="label">
               Password
             </p>
-            <input v-model="email" class="text-input" placeholder="Password" type="email">
+            <input v-model="passowrd" class="text-input" placeholder="Password" type="email">
           </div>
-          <label class="check-container">Remember Me
+          <label class="check-container">I agree to the Terms and Privacy
             <input class="check-input" type="checkbox" :checked="checked" @click="toogleCheck">
             <span class="checkmark" />
           </label>
@@ -34,14 +40,14 @@
               <path d="M3.4375 11H13.06" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
               <path d="M13.0625 3.4375H17.875C18.0573 3.4375 18.2322 3.50993 18.3611 3.63886C18.4901 3.76779 18.5625 3.94266 18.5625 4.125V17.875C18.5625 18.0573 18.4901 18.2322 18.3611 18.3611C18.2322 18.4901 18.0573 18.5625 17.875 18.5625H13.0625" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
             </svg>
-            <span class="btn-text">Sign In</span>
+            <span class="btn-text">Sign Up</span>
           </button>
           <div class="bottom-text">
             <p class="forgot">
               Forgot Password?
             </p>
             <p class="no-account">
-              Don’t have an Account? <span class="sign-up">Sign Up!</span>
+              Have an Account? <span class="sign-up" @click="$router.push('/login')">Sign In!</span>
             </p>
           </div>
         </div>
@@ -53,7 +59,16 @@
 
 <script>
 export default {
-
+  data () {
+    return {
+      checked: false
+    }
+  },
+  methods: {
+    toogleCheck () {
+      this.checked = !this.checked
+    }
+  }
 }
 </script>
 
@@ -222,6 +237,7 @@ export default {
 
 .sign-up {
   color: #90BB6E;
+  cursor: pointer;
 }
 
 </style>
