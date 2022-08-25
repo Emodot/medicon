@@ -49,7 +49,8 @@
       <div class="rhs" />
     </div>
     <ModalsResetPassword v-if="resetPassword" @sentInst="sentInst" @close-modal="resetPassword = false" />
-    <ModalsLinkSent v-if="linkSent" />
+    <ModalsLinkSent v-if="linkSent" @set-password="setPassword" />
+    <ModalsCreatePassword v-if="createPassword" />
   </div>
 </template>
 
@@ -69,6 +70,10 @@ export default {
     sentInst () {
       this.resetPassword = false
       this.linkSent = true
+    },
+    setPassword () {
+      this.linkSent = false
+      this.createPassword = true
     }
   }
 }
