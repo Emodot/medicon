@@ -34,5 +34,8 @@ export default {
   .container {
     padding: 20px;
   }
+  .dashboard-table {
+    margin-top: 3rem;
+  }
 }
 </style>

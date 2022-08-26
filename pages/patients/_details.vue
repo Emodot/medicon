@@ -390,4 +390,32 @@ export default {
 .tab-1 {
   padding-top: 3rem;
 }
+
+@media only screen and (max-width: 500px) {
+  .container {
+    padding: 20px;
+  }
+  .inner {
+    width: 100%;
+  }
+
+  .row-ctn {
+    margin-bottom: 0;
+    flex-wrap: wrap;
+  }
+
+  .box {
+    flex-basis: 50%;
+    margin-bottom: 20px;
+  }
+
+  .box-text {
+    font-size: 15px;
+    word-break: break-word;
+  }
+
+  .box-ot {
+    margin-bottom: 20px;
+  }
+}
 </style>

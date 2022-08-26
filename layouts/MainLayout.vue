@@ -165,6 +165,7 @@ html {
 
 @media only screen and (max-width: 500px) {
 .main-content {
+  margin-top: 11vh;
   padding: 0;
   margin-left: 0;
   width: 100vw;
