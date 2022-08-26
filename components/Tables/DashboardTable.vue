@@ -301,6 +301,10 @@ th {
     overflow: auto;
   }
 
+  .table-title {
+    font-size: 16px;
+  }
+
   .table-top {
     padding: 20px 15px;
   }
