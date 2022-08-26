@@ -397,6 +397,7 @@ export default {
   }
   .inner {
     width: 100%;
+    padding: 15px;
   }
 
   .row-ctn {
