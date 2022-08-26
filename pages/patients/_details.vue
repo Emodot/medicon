@@ -250,10 +250,6 @@ export default {
   width: 90%;
 }
 
-/* .patient-details {
-
-} */
-
 .back {
   display: flex;
   align-items: center;
@@ -362,7 +358,6 @@ export default {
 }
 
 .box-text {
-  /* font-weight: 13px; */
   margin-top: 7px;
   line-height: 20px;
   color: #000000;
