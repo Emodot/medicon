@@ -56,14 +56,13 @@ export default {
   data () {
     return {
       notificationsCount: '',
-      // pageTitle: 'Dashboard'
       username: '',
       balance: '',
       challengersOnline: '0',
       newCampaignShow: false,
       campaignContactShow: false,
-      email: 'foobar@example.com', // Customer email
-      amount: 1000000, // in kobo
+      email: 'foobar@example.com',
+      amount: 1000000,
       overviewData: []
     }
   },
