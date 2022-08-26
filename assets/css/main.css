@@ -28,6 +28,12 @@ textarea {
   font-size: 36px;
 }
 
+@media only screen and (max-width: 500px) {
+  .page-title {
+    font-size: 24px;
+  }
+}
+
 /* Scroll bar custom styling */
 ::-webkit-scrollbar {
   width: 4px;
