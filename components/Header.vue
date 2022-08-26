@@ -275,7 +275,7 @@ export default {
 
 @media only screen and (max-width: 500px) {
 .header-container {
-  height: 11vh;
+  height: 12vh;
   width: 100vw;
   padding: 15px;
 }
@@ -298,12 +298,16 @@ export default {
   margin-left: 20px;
 }
 
+.search-ctn {
+  display: none;
+}
+
 .btn .blue-btn .plus {
   margin-left: 10px;
 }
 
 .mobile-logo img {
-  width: 80px;
+  width: 100px;
   margin-right: 10px;
 }
 
