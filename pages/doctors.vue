@@ -1,6 +1,6 @@
 <template>
   <div class="container">
-    <p class="page-title">
+    <p class="page-title come-down">
       Doctors
     </p>
     <div class="dashboard-table">

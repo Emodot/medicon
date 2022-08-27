@@ -187,7 +187,7 @@ export default {
   outline: none;
   height: 50px;
   flex-basis: 48%;
-  background-color: #90BB6E;
+  background-color: #1D692C;
   color: #fff;
   font-weight: 500;
   font-size: 14px;

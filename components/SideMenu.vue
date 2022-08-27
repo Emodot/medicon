@@ -214,17 +214,17 @@ export default {
 .inner:hover .menu-icon svg path,
 .inner:hover .menu-header,
 .inner:hover .menu-text {
-  fill: #90BB6E;
-  /* stroke: #90BB6E; */
-  color: #90BB6E;
+  fill: #1D692C;
+  /* stroke: #1D692C; */
+  color: #1D692C;
 }
 
 a.nuxt-link-exact-active .menu-icon svg path,
 a.nuxt-link-exact-active .menu-header,
 a.nuxt-link-exact-active .menu-text {
-  fill: #90BB6E;
-  /* stroke: #90BB6E; */
-  color: #90BB6E;
+  fill: #1D692C;
+  /* stroke: #1D692C; */
+  color: #1D692C;
 }
 
 .menu-text {

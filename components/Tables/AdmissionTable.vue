@@ -3,7 +3,7 @@
     <div v-if="transLoading" class="table-loader">
       <TableLoader />
     </div>
-    <div v-else class="table-container">
+    <div v-else class="table-container come-down">
       <div class="table-top">
         <p class="table-title">
           Admissions

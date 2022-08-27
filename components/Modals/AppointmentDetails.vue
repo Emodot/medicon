@@ -195,7 +195,7 @@ export default {
   outline: none;
   height: 50px;
   width: 100%;
-  background-color: #90BB6E;
+  background-color: #1D692C;
   color: #fff;
   font-weight: 500;
   font-size: 14px;

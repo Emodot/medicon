@@ -1,7 +1,7 @@
 <template>
   <div class="container">
     <div class="cards">
-      <div class="card">
+      <div class="card come-down">
         <div class="card-img">
           <img src="~assets/images/first aid.png" alt="">
         </div>
@@ -14,7 +14,7 @@
           </p>
         </div>
       </div>
-      <div class="card">
+      <div class="card come-down">
         <div class="card-img">
           <img src="~assets/images/crutch.png" alt="">
         </div>
@@ -27,7 +27,7 @@
           </p>
         </div>
       </div>
-      <div class="card">
+      <div class="card come-down">
         <div class="card-img">
           <img src="~assets/images/operation theater.png" alt="">
         </div>
@@ -40,7 +40,7 @@
           </p>
         </div>
       </div>
-      <div class="card">
+      <div class="card come-down">
         <div class="card-img">
           <img src="~assets/images/UserCirclePlus.png" alt="">
         </div>
