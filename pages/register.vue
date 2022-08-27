@@ -43,9 +43,9 @@
             <span class="btn-text">Sign Up</span>
           </button>
           <div class="bottom-text">
-            <p class="forgot">
+            <!-- <p class="forgot">
               Forgot Password?
-            </p>
+            </p> -->
             <p class="no-account">
               Have an Account? <span class="sign-up" @click="$router.push('/login')">Sign In!</span>
             </p>
@@ -91,6 +91,7 @@ export default {
   flex-basis: 65%;
   background-image: url('assets/images/login-bg.jpg');
   background-size: cover;
+  background-position-y: bottom;
   height: 100vh;
 }
 
@@ -115,11 +116,11 @@ export default {
 .label {
   font-size: 15px;
   font-weight: 500;
-  color: #474680;
+  color: #3F3F3F;
 }
 
 .text-input {
-  border: 1px solid #47468060;
+  border: 1px solid #3F3F3F60;
   background-color: transparent;
   outline: none;
   padding: 0 15px;
@@ -130,7 +131,7 @@ export default {
 }
 
 ::placeholder {
-  color: #47468060;
+  color: #3F3F3F60;
 }
 
 .check-ctn {

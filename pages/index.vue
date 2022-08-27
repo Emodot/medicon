@@ -90,12 +90,12 @@ export default {
 }
 
 .card-name {
-  color: #474680;
+  color: #3F3F3F;
   font-weight: 600;
 }
 
 .card-num {
-  color: #474680;
+  color: #3F3F3F;
   font-size: 24px;
   margin-top: 10px;
 }

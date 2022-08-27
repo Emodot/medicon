@@ -28,7 +28,7 @@
             <input class="check-input" type="checkbox" :checked="checked" @click="toogleCheck">
             <span class="checkmark" />
           </label>
-          <button class="sign-in" @click="$emit('start-quiz')">
+          <button class="sign-in" @click="$router.push('/')">
             <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path d="M9.45416 14.6094L13.0626 11L9.45416 7.39062" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
               <path d="M3.4375 11H13.06" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
@@ -98,6 +98,8 @@ export default {
   flex-basis: 65%;
   background-image: url('assets/images/login-bg.jpg');
   background-size: cover;
+  background-position-y: bottom;
+  height: 100vh;
 }
 
 .title {
@@ -121,11 +123,11 @@ export default {
 .label {
   font-size: 15px;
   font-weight: 500;
-  color: #474680;
+  color: #3F3F3F;
 }
 
 .text-input {
-  border: 1px solid #47468060;
+  border: 1px solid #3F3F3F60;
   background-color: transparent;
   outline: none;
   padding: 0 15px;
@@ -136,7 +138,7 @@ export default {
 }
 
 ::placeholder {
-  color: #47468060;
+  color: #3F3F3F60;
 }
 
 .check-ctn {

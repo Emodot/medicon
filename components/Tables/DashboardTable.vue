@@ -186,7 +186,7 @@ export default {
 .table-title {
   font-size: 22px;
   font-weight: 700;
-  color: #474680;
+  color: #3F3F3F;
 }
 
 .search-box {
@@ -236,7 +236,7 @@ table, th, td {
 
 .table-header th {
   font-weight: 500;
-  color: #474680;
+  color: #3F3F3F;
 }
 .table-details {
   height: 60px;
