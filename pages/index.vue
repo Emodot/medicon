@@ -95,7 +95,7 @@ export default {
 }
 
 .card-num {
-  color: #90BB6E;
+  color: #474680;
   font-size: 24px;
   margin-top: 10px;
 }

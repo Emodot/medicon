@@ -146,7 +146,7 @@ export default {
 
 .line {
   border: none;
-  border-top: 1px solid rgba(0, 0, 0, 0.162);
+  border-top: 1px solid #47468060;
   margin-top: 30px;
   margin-bottom: 30px;
 }
@@ -176,11 +176,11 @@ export default {
 .label {
   font-size: 15px;
   font-weight: 500;
-  color: rgba(0, 0, 0, 0.769);
+  color: #474680;
 }
 
 .text-input {
-  border: 1px solid rgba(0, 0, 0, 0.184);
+  border: 1px solid #47468060;
   background-color: transparent;
   outline: none;
   padding: 0 15px;

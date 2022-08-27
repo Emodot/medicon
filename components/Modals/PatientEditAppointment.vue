@@ -50,15 +50,14 @@
             <input v-model="time" class="text-input" type="time">
           </div>
         </div>
-        <div class="input-box">
-          <p class="label">
-            Phone Number
-          </p>
-          <input v-model="phone" class="text-input" type="text">
+        <div class="bottom-btn">
+          <button class="save-btn">
+            Save Appointment
+          </button>
+          <button class="cancel-btn">
+            Cancel Appointment
+          </button>
         </div>
-        <button class="save-btn">
-          Save Appointment
-        </button>
       </div>
     </div>
   </div>
@@ -134,7 +133,7 @@ export default {
 
 .line {
   border: none;
-  border-top: 1px solid rgba(0, 0, 0, 0.162);
+  border-top: 1px solid #47468060;
   margin-top: 30px;
   margin-bottom: 30px;
 }
@@ -164,11 +163,11 @@ export default {
 .label {
   font-size: 15px;
   font-weight: 500;
-  color: rgba(0, 0, 0, 0.769);
+  color: #474680;
 }
 
 .text-input {
-  border: 1px solid rgba(0, 0, 0, 0.184);
+  border: 1px solid #47468060;
   background-color: transparent;
   outline: none;
   padding: 0 15px;
@@ -178,13 +177,32 @@ export default {
   border-radius: 10px;
 }
 
+.bottom-btn {
+  display: flex;
+  justify-content: space-between;
+}
+
 .save-btn {
   border: none;
   outline: none;
   height: 50px;
-  width: 100%;
+  flex-basis: 48%;
   background-color: #90BB6E;
   color: #fff;
+  font-weight: 500;
+  font-size: 14px;
+  border-radius: 10px;
+  margin-top: 40px;
+  cursor: pointer;
+}
+
+.cancel-btn {
+  border: 1px solid red;
+  outline: none;
+  height: 50px;
+  flex-basis: 48%;
+  background-color: transparent;
+  color: red;
   font-weight: 500;
   font-size: 14px;
   border-radius: 10px;
