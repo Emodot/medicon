@@ -90,7 +90,7 @@ export default {
 }
 
 .card-name {
-  color: #82888D;
+  color: #474680;
   font-weight: 600;
 }
 

@@ -83,10 +83,15 @@ export default {
   padding: 70px 70px;
 }
 
+.logo img {
+  width: 35%;
+}
+
 .rhs {
   flex-basis: 65%;
   background-image: url('assets/images/login-bg.jpg');
   background-size: cover;
+  height: 100vh;
 }
 
 .title {
@@ -170,7 +175,7 @@ export default {
   left: 0;
   height: 15px;
   width: 15px;
-  background-color: #eee;
+  background-color: #ccc;
   border-radius: 3px;
 }
 
@@ -219,6 +224,7 @@ export default {
   justify-content: center;
   border-radius: 5px;
   margin-top: 2rem;
+  cursor: pointer;
 }
 
 .btn-text {
@@ -242,6 +248,37 @@ export default {
 .sign-up {
   color: #90BB6E;
   cursor: pointer;
+}
+
+@media only screen and (max-width: 500px) {
+
+  .logo img {
+  width: 45%;
+}
+  .rhs {
+    display: none;
+  }
+
+  .lhs {
+    flex-basis: 100%;
+    padding: 20px 30px;
+  }
+
+  .title {
+    margin-top: 3rem;
+  }
+
+  .form {
+    margin-top: 2rem;
+  }
+
+  .bottom-text {
+    margin-top: 3rem;
+  }
+
+  .no-account {
+    padding-bottom: 3rem;
+  }
 }
 
 </style>

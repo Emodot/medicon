@@ -89,7 +89,7 @@ export default {
 <style scoped>
 * {
   font-family: 'Poppins', sans-serif;
-  color: #454545;
+  color: #474680;
 }
 .modal-backdrop-2 {
   z-index: 7;
