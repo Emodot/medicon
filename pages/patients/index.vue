@@ -1,8 +1,13 @@
 <template>
   <div class="container">
-    <p class="page-title">
-      Patients
-    </p>
+    <div class="page-top">
+      <p class="page-title">
+        Patients
+      </p>
+      <button class="admit-btn" @click="$router.push('/patients/new-patient')">
+        New Patient
+      </button>
+    </div>
     <div class="dashboard-table">
       <TablesPatientsTable />
     </div>
@@ -22,6 +27,24 @@ export default {
 
 .dashboard-table {
   margin-top: 5rem;
+}
+
+.page-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.admit-btn {
+  border: none;
+  background-color: #90BB6E;
+  height: 40px;
+  color: #fff;
+  font-weight: 600;
+  font-size: 14px;
+  border-radius: 5px;
+  width: 8rem;
+  cursor: pointer;
 }
 
 @media only screen and (max-width: 500px) {
