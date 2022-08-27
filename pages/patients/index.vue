@@ -1,6 +1,6 @@
 <template>
   <div class="container">
-    <div class="page-top">
+    <div class="page-top come-down">
       <p class="page-title">
         Patients
       </p>
@@ -37,7 +37,7 @@ export default {
 
 .admit-btn {
   border: none;
-  background-color: #90BB6E;
+  background-color: #1D692C;
   height: 40px;
   color: #fff;
   font-weight: 600;

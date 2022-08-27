@@ -186,7 +186,7 @@ export default {
 
 /* When the checkbox is checked, add a background */
 .check-container .check-input:checked ~ .checkmark {
-  background-color: #90BB6E;
+  background-color: #1D692C;
 }
 
 /* Create the checkmark/indicator (hidden when not checked) */
@@ -216,7 +216,7 @@ export default {
 
 .sign-in {
   border: none;
-  background-color: #90BB6E;
+  background-color: #1D692C;
   height: 45px;
   width: 7rem;
   display: flex;
@@ -237,7 +237,7 @@ export default {
 }
 
 .forgot {
-  color: #90BB6E;
+  color: #1D692C;
   cursor: pointer;
 }
 
@@ -246,7 +246,7 @@ export default {
 }
 
 .sign-up {
-  color: #90BB6E;
+  color: #1D692C;
   cursor: pointer;
 }
 

@@ -255,7 +255,7 @@ export default {
 
 .bottom-btn button {
   border: none;
-  background-color: #5C07A3;
+  background-color: #1D692C;
   height: 50px;
   width: 12rem;
   font-size: 14px;
