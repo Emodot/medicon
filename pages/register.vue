@@ -110,11 +110,11 @@ export default {
 .label {
   font-size: 15px;
   font-weight: 500;
-  color: rgba(0, 0, 0, 0.769);
+  color: #474680;
 }
 
 .text-input {
-  border: 1px solid rgba(0, 0, 0, 0.184);
+  border: 1px solid #47468060;
   background-color: transparent;
   outline: none;
   padding: 0 15px;
@@ -122,6 +122,10 @@ export default {
   height: 50px;
   margin-top: 7px;
   border-radius: 10px;
+}
+
+::placeholder {
+  color: #47468060;
 }
 
 .check-ctn {

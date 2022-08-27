@@ -360,7 +360,7 @@ export default {
 .box-text {
   margin-top: 7px;
   line-height: 20px;
-  color: #000000;
+  color: #474680;
 }
 
 /* MEDICAL DETAILS */
