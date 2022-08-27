@@ -32,15 +32,21 @@
         </div>
         <div class="input-box">
           <p class="label">
-            Doctor’s Name
-          </p>
-          <input v-model="doctor_name" class="text-input" type="text">
-        </div>
-        <div class="input-box">
-          <p class="label">
             Email Address
           </p>
           <input v-model="email" class="text-input" type="email">
+        </div>
+        <div class="input-box">
+          <p class="label">
+            Phone Number
+          </p>
+          <input v-model="phone" class="text-input" type="text">
+        </div>
+        <div class="input-box">
+          <p class="label">
+            Doctor’s Name
+          </p>
+          <input v-model="doctor_name" class="text-input" type="text">
         </div>
         <div class="input-ctn">
           <div class="input-box l-box">
@@ -55,12 +61,6 @@
             </p>
             <input v-model="time" class="text-input" type="time">
           </div>
-        </div>
-        <div class="input-box">
-          <p class="label">
-            Phone Number
-          </p>
-          <input v-model="phone" class="text-input" type="text">
         </div>
         <div class="input-box">
           <p class="label">

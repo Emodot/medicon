@@ -220,7 +220,7 @@ export default {
 .table-title {
   font-size: 22px;
   font-weight: 700;
-  color: #000000;
+  color: #474680;
 }
 
 .search-box {
@@ -271,7 +271,7 @@ table, th, td {
 
 .table-header th {
   font-weight: 500;
-  color: #000000;
+  color: #474680;
 }
 .table-details {
   height: 60px;
