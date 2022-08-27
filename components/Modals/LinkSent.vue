@@ -42,8 +42,7 @@ export default {
 
 <style scoped>
 * {
-  /* font-family: 'Poppins', sans-serif; */
-  color: #474680;
+  color: #3F3F3F;
 }
 .modal-backdrop-2 {
   z-index: 7;
@@ -83,7 +82,7 @@ export default {
 
 ::placeholder {
   font-size: 14px;
-  color: #47468060;
+  color: #3F3F3F60;
 }
 
 .title {
@@ -115,7 +114,7 @@ export default {
 }
 
 .label {
-  color: #474680;
+  color: #3F3F3F;
   font-size: 14px;
   margin-bottom: 8px;
 }
@@ -124,7 +123,7 @@ input {
   height: 50px;
   width: 100%;
   border-radius: 5px;
-  border: 1px solid #47468060;
+  border: 1px solid #3F3F3F60;
   padding: 0 20px;
   outline: none;
 }

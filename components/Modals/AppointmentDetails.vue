@@ -100,8 +100,7 @@ export default {
 
 <style scoped>
 * {
-  font-family: 'Poppins', sans-serif;
-  color: #474680;
+  color: #3F3F3F;
 }
 .modal-backdrop-2 {
   z-index: 7;
@@ -146,7 +145,7 @@ export default {
 
 .line {
   border: none;
-  border-top: 1px solid #47468060;
+  border-top: 1px solid #3F3F3F60;
   margin-top: 30px;
   margin-bottom: 30px;
 }
@@ -176,11 +175,11 @@ export default {
 .label {
   font-size: 15px;
   font-weight: 500;
-  color: #474680;
+  color: #3F3F3F;
 }
 
 .text-input {
-  border: 1px solid #47468060;
+  border: 1px solid #3F3F3F60;
   background-color: transparent;
   outline: none;
   padding: 0 15px;

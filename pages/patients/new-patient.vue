@@ -2,8 +2,8 @@
   <div class="container">
     <div class="back" @click="$router.go(-1)">
       <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-        <path opacity="0.4" d="M12.0001 22.0002C6.48509 22.0002 2.00009 17.5142 2.00009 12.0002C2.00009 6.48621 6.48509 2.00021 12.0001 2.00021C17.5141 2.00021 22.0001 6.48621 22.0001 12.0002C22.0001 17.5142 17.5141 22.0002 12.0001 22.0002Z" fill="#474680" />
-        <path d="M13.4425 16.2209C13.2515 16.2209 13.0595 16.1479 12.9135 16.0019L9.42649 12.5319C9.28549 12.3909 9.20649 12.1999 9.20649 11.9999C9.20649 11.8009 9.28549 11.6099 9.42649 11.4689L12.9135 7.99692C13.2065 7.70492 13.6805 7.70492 13.9735 7.99892C14.2655 8.29292 14.2645 8.76792 13.9715 9.05992L11.0185 11.9999L13.9715 14.9399C14.2645 15.2319 14.2655 15.7059 13.9735 15.9999C13.8275 16.1479 13.6345 16.2209 13.4425 16.2209Z" fill="#474680" fill-opacity="0.5" />
+        <path opacity="0.4" d="M12.0001 22.0002C6.48509 22.0002 2.00009 17.5142 2.00009 12.0002C2.00009 6.48621 6.48509 2.00021 12.0001 2.00021C17.5141 2.00021 22.0001 6.48621 22.0001 12.0002C22.0001 17.5142 17.5141 22.0002 12.0001 22.0002Z" fill="#3F3F3F" />
+        <path d="M13.4425 16.2209C13.2515 16.2209 13.0595 16.1479 12.9135 16.0019L9.42649 12.5319C9.28549 12.3909 9.20649 12.1999 9.20649 11.9999C9.20649 11.8009 9.28549 11.6099 9.42649 11.4689L12.9135 7.99692C13.2065 7.70492 13.6805 7.70492 13.9735 7.99892C14.2655 8.29292 14.2645 8.76792 13.9715 9.05992L11.0185 11.9999L13.9715 14.9399C14.2645 15.2319 14.2655 15.7059 13.9735 15.9999C13.8275 16.1479 13.6345 16.2209 13.4425 16.2209Z" fill="#3F3F3F" fill-opacity="0.5" />
       </svg>
       <p>Back</p>
     </div>
@@ -79,7 +79,7 @@
                 </option>
               </select>
               <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M14.625 6.75L9 12.375L3.375 6.75" stroke="#47468060" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                <path d="M14.625 6.75L9 12.375L3.375 6.75" stroke="#3F3F3F60" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
               </svg>
             </div>
           </div>
@@ -102,7 +102,7 @@
                 </option>
               </select>
               <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M14.625 6.75L9 12.375L3.375 6.75" stroke="#47468060" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                <path d="M14.625 6.75L9 12.375L3.375 6.75" stroke="#3F3F3F60" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
               </svg>
             </div>
           </div>
@@ -123,7 +123,7 @@
                 </option>
               </select>
               <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M14.625 6.75L9 12.375L3.375 6.75" stroke="#47468060" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                <path d="M14.625 6.75L9 12.375L3.375 6.75" stroke="#3F3F3F60" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
               </svg>
             </div>
           </div>
@@ -187,7 +187,7 @@ export default {
 }
 
 .back p {
-  color: #474680;
+  color: #3F3F3F;
 }
 .row {
   display: flex;
@@ -201,7 +201,7 @@ export default {
 }
 
 .label {
-  color: #474680;
+  color: #3F3F3F;
   margin-bottom: 13px;
   font-size: 14px;
 }
@@ -209,7 +209,7 @@ export default {
 .input {
   height: 50px;
   width: 100%;
-  border: 1px solid #47468060;
+  border: 1px solid #3F3F3F60;
   outline: none;
   border-radius: 3px;
   padding: 0 15px;
@@ -217,7 +217,7 @@ export default {
 
 ::placeholder {
   font-size: 14px;
-  color: #47468060;
+  color: #3F3F3F60;
 }
 
 .form-select {
@@ -225,12 +225,12 @@ export default {
 }
 .form-select select {
   display: block;
-  border: 1px solid #47468060;
+  border: 1px solid #3F3F3F60;
   border-radius: 3px;
   display: flex;
   justify-content: space-between;
   height: 50px;
-  color: #474680;
+  color: #3F3F3F;
   padding: 0 16px;
   width: 100%;
   appearance: none;
