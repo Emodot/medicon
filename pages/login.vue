@@ -22,7 +22,7 @@
             <p class="label">
               Password
             </p>
-            <input v-model="passowrd" class="text-input" placeholder="Password" type="email">
+            <input v-model="password" class="text-input" placeholder="Password" type="email">
           </div>
           <label class="check-container">Remember Me
             <input class="check-input" type="checkbox" :checked="checked" @click="toogleCheck">
@@ -59,7 +59,10 @@ export default {
   data () {
     return {
       checked: false,
+      email: '',
+      password: '',
       resetPassword: false,
+      createPassword: false,
       linkSent: false
     }
   },

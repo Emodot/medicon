@@ -16,7 +16,7 @@
             <p class="label">
               Name
             </p>
-            <input v-model="text" class="text-input" placeholder="Name" type="email">
+            <input v-model="name" class="text-input" placeholder="Name" type="text">
           </div>
           <div class="input-box">
             <p class="label">
@@ -28,7 +28,7 @@
             <p class="label">
               Password
             </p>
-            <input v-model="passowrd" class="text-input" placeholder="Password" type="email">
+            <input v-model="password" class="text-input" placeholder="Password" type="email">
           </div>
           <label class="check-container">I agree to the Terms and Privacy
             <input class="check-input" type="checkbox" :checked="checked" @click="toogleCheck">
@@ -61,6 +61,9 @@
 export default {
   data () {
     return {
+      name: '',
+      email: '',
+      password: '',
       checked: false
     }
   },
