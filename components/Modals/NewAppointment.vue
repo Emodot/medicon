@@ -2,7 +2,7 @@
   <div class="modal-backdrop-2 come-down" @click="$emit('close-modal')">
     <div class="modal-2" @click.stop>
       <div class="top-modal">
-        <p>Edit Appointment</p>
+        <p>New Appointment</p>
         <svg
           width="24"
           height="24"
@@ -54,9 +54,9 @@
           <button class="save-btn">
             Save Appointment
           </button>
-          <button class="cancel-btn">
+          <!-- <button class="cancel-btn">
             Cancel Appointment
-          </button>
+          </button> -->
         </div>
       </div>
     </div>
@@ -185,13 +185,13 @@ export default {
   border: none;
   outline: none;
   height: 50px;
-  flex-basis: 48%;
+  flex-basis: 100%;
   background-color: #1D692C;
   color: #fff;
   font-weight: 500;
   font-size: 14px;
   border-radius: 10px;
-  margin-top: 40px;
+  margin-top: 30px;
   cursor: pointer;
 }
 
