@@ -1,7 +1,7 @@
 <template>
   <div class="container">
     <div class="inner">
-      <div class="lhs">
+      <div class="lhs slide-in-from-left">
         <div class="logo">
           <img src="~assets/images/medicon-logo.png" alt="">
         </div>
@@ -95,11 +95,13 @@ export default {
 }
 
 .rhs {
-  flex-basis: 65%;
+  width: 65%;
   background-image: url('assets/images/login-bg.jpg');
   background-size: cover;
   background-position-y: bottom;
   height: 100vh;
+  margin-left: 35%;
+  position: fixed;
 }
 
 .title {
