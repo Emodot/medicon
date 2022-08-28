@@ -46,6 +46,10 @@ body {
   background: #f2f5fb;
 }
 
+button {
+  font-weight: 600 !important;
+}
+
 a {
   text-decoration: none;
 }
