@@ -9,7 +9,7 @@
     </div>
     <div class="inner">
       <p class="head">
-        Add new Patient
+        Edit Patient's Information
       </p>
       <div class="ctn">
         <div class="row">
