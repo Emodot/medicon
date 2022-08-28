@@ -21,7 +21,7 @@ export default {
 }
 
 .dashboard-table {
-  margin-top: 5rem;
+  margin-top: 3rem;
 }
 
 @media only screen and (max-width: 500px) {

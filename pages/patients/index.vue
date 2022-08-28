@@ -26,7 +26,7 @@ export default {
 }
 
 .dashboard-table {
-  margin-top: 5rem;
+  margin-top: 3rem;
 }
 
 .page-top {
