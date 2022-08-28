@@ -2,7 +2,7 @@
   <div class="modal-backdrop-2 come-down" @click="$emit('close-modal')">
     <div class="modal-2" @click.stop>
       <div class="top-modal">
-        <p>Edit appointment</p>
+        <p>Edit Appointment</p>
         <svg
           width="24"
           height="24"

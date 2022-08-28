@@ -14,7 +14,7 @@
             David Emaye’s File <span class="adm">(Patient is not on Admission)</span>
           </p>
           <div class="rh-btn">
-            <button class="appoint-btn">
+            <button class="appoint-btn" @click="newAppointment = true">
               New Appointment
             </button>
             <button class="admit-btn">
@@ -228,6 +228,7 @@
       </div>
     </div>
     <ModalsPatientEditAppointment v-if="editAppointment" @close-modal="editAppointment = false" />
+    <ModalsNewAppointment v-if="newAppointment" @close-modal="newAppointment = false" />
   </div>
 </template>
 
@@ -237,7 +238,8 @@ export default {
   data () {
     return {
       activeTab: 'visit',
-      editAppointment: false
+      editAppointment: false,
+      newAppointment: false
     }
   }
 }
@@ -285,7 +287,7 @@ export default {
 
 .adm {
   color: #068F35;
-  font-size: 14px;
+  font-size: 16px;
   font-style: italic;
 }
 
