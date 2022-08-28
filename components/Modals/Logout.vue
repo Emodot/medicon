@@ -54,13 +54,13 @@ export default {
   background-color: #fff;
   width: 7rem;
   height: 40px;
-  border: none;
+  border: 1px solid #de0000;
   border-radius: 7px;
   cursor: pointer;
 }
 
 .logout p {
-  color: #162838;
+  color: #de0000;
   font-weight: 600;
 }
 </style>
