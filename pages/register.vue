@@ -89,7 +89,7 @@ export default {
 
 .rhs {
   width: 65%;
-  background-image: url('assets/images/login-bg.jpg');
+  background-image: url('assets/images/login-bg.webp');
   background-size: cover;
   background-position-y: bottom;
   height: 100vh;
