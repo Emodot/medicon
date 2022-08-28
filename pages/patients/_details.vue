@@ -13,9 +13,14 @@
           <p class="title">
             David Emaye’s File <span class="adm">(Patient is not on Admission)</span>
           </p>
-          <button class="admit-btn">
-            Admit Now
-          </button>
+          <div class="rh-btn">
+            <button class="appoint-btn">
+              New Appointment
+            </button>
+            <button class="admit-btn">
+              Admit Now
+            </button>
+          </div>
         </div>
         <div class="details-top">
           <p class="details-title">
@@ -280,6 +285,23 @@ export default {
   color: #068F35;
   font-size: 14px;
   font-style: italic;
+}
+
+.rh-btn {
+  display: flex;
+}
+
+.appoint-btn {
+  border: 1px solid #1D692C;
+  background-color: transparent;
+  height: 40px;
+  color: #1D692C;
+  font-weight: 600;
+  font-size: 14px;
+  border-radius: 5px;
+  width: 9rem;
+  cursor: pointer;
+  margin-right: 10px;
 }
 
 .admit-btn {

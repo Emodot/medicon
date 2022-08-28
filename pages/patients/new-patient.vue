@@ -58,24 +58,24 @@
           </div>
           <div class="input-ctn">
             <p class="label">
-              Languages
+              Residential Address
             </p>
-            <input v-model="languages" type="text" class="input" placeholder="Languages">
+            <input v-model="residence_address" type="text" class="input" placeholder="Residential Address">
           </div>
           <div class="input-ctn">
             <p class="label">
-              Nationality
+              Gender
             </p>
             <div class="form-select">
-              <select v-model="nationality" required>
+              <select v-model="gender" required>
                 <option value="">
                   Please Select
                 </option>
                 <option value="nigerian">
-                  Nigerian
+                  Male
                 </option>
                 <option value="abuja">
-                  Abuja
+                  Female
                 </option>
               </select>
               <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -87,51 +87,21 @@
         <div class="row">
           <div class="input-ctn">
             <p class="label">
-              State of Origin
+              Next of Kin
             </p>
-            <div class="form-select">
-              <select v-model="state_origin" required>
-                <option value="">
-                  Please Select
-                </option>
-                <option value="lagos">
-                  Lagos
-                </option>
-                <option value="abuja">
-                  Abuja
-                </option>
-              </select>
-              <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M14.625 6.75L9 12.375L3.375 6.75" stroke="#3F3F3F60" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
-              </svg>
-            </div>
+            <input v-model="next_of_kin" type="text" class="input" placeholder="Next of Kin">
           </div>
           <div class="input-ctn">
             <p class="label">
-              State of Residence
+              Next of Kin Phone Number
             </p>
-            <div class="form-select">
-              <select v-model="state_residence" required>
-                <option value="">
-                  Please Select
-                </option>
-                <option value="lagos">
-                  Lagos
-                </option>
-                <option value="abuja">
-                  Abuja
-                </option>
-              </select>
-              <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M14.625 6.75L9 12.375L3.375 6.75" stroke="#3F3F3F60" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
-              </svg>
-            </div>
+            <input v-model="next_of_kin_phone" type="text" class="input" placeholder="Next of Kin Phone Number">
           </div>
           <div class="input-ctn">
             <p class="label">
-              Residential Address
+              Next of Kin Address
             </p>
-            <input v-model="residential_address" type="text" class="input" placeholder="Residential Address">
+            <input v-model="next_of_kin_address" type="text" class="input" placeholder="Next of Kin Address">
           </div>
         </div>
         <div class="bottom-btn">
@@ -153,10 +123,10 @@ export default {
       email: '',
       phone: '',
       dob: '',
-      languages: '',
-      nationality: '',
-      state_residence: '',
-      state_origin: '',
+      gender: '',
+      next_of_kin_address: '',
+      next_of_kin_phone: '',
+      next_of_kin: '',
       residence_address: '',
       age: ''
     }
