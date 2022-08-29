@@ -194,8 +194,9 @@ export default {
 }
 
 .menu-header {
-  font-weight: 700;
-  color: #3F3F3F;
+  font-weight: 500;
+  font-size: 17px;
+  color: #6e6e6e;
 }
 
 .inner {
