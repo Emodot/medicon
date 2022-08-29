@@ -9,7 +9,7 @@
       </button>
     </div>
     <div class="inner">
-      <div class="inner-tab">
+      <div class="inner-tab slide-in-from-left">
         <div
           :class="activeTab.includes('my-account') ? 'active' : 'inactive'"
           class="tab"
@@ -26,7 +26,7 @@
         </div>
       </div>
       <div v-if="activeTab == 'my-account'" class="tab-1">
-        <div class="account-box">
+        <div class="account-box come-down">
           <p class="head">
             Change Account Details
           </p>
@@ -64,7 +64,7 @@
           </div>
         </div>
       </div>
-      <div v-if="activeTab == 'security'" class="tab-1">
+      <div v-if="activeTab == 'security'" class="tab-1 come-down">
         <div class="account-box">
           <p class="head">
             Keep your account protected
