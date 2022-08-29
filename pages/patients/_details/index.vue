@@ -7,9 +7,9 @@
       </svg>
       <p>Back</p>
     </div>
-    <div class="inner">
+    <div class="inner slide-in-from-left">
       <div class="patient-details">
-        <div class="top-block come-down">
+        <div class="top-block">
           <p class="title">
             David Emaye’s File <span class="adm">(Patient is not on Admission)</span>
           </p>
