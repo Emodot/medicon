@@ -249,6 +249,7 @@ export default {
 
 .no-account {
   margin-top: 10px;
+  padding-bottom: 40px;
 }
 
 .sign-up {
