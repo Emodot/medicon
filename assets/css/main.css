@@ -71,8 +71,8 @@ textarea {
 
 /* Scroll bar custom styling */
 ::-webkit-scrollbar {
-  width: 4px;
-  height: 4px;
+  width: 2px;
+  height: 2px;
 }
 
 ::-webkit-scrollbar-track {
@@ -82,7 +82,7 @@ textarea {
 
 ::-webkit-scrollbar-thumb {
   width: 2px;
-  background-color: #555555;
+  background-color: #55555583;
   border-radius: 24px;
   -webkit-border-radius: 24px;
   -moz-border-radius: 24px;
