@@ -126,7 +126,7 @@ export default {
   /* margin-top: 5%; */
   background-color: white;
   width: 30%;
-  height: fit-content;
+  height: 80vh;
   align-items: center;
   border-radius: 10px;
   overflow-y: auto;
