@@ -54,9 +54,6 @@
           <button class="save-btn">
             Save Appointment
           </button>
-          <!-- <button class="cancel-btn">
-            Cancel Appointment
-          </button> -->
         </div>
       </div>
     </div>
