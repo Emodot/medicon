@@ -390,6 +390,10 @@ export default {
 }
 
 /* MEDICAL DETAILS */
+.medical-details {
+  width: 100%;
+}
+
 .medical-details .active {
   color: #1D692C !important;
   border-bottom: 3px solid #1D692C;
@@ -399,6 +403,8 @@ export default {
   display: flex;
   margin-top: 50px;
   border-bottom: 1px solid #a8a8ad6e;
+  width: 100%;
+  overflow: scroll;
 }
 
 .medical-details .tab{
@@ -406,6 +412,7 @@ export default {
   cursor: pointer;
   margin-right: 70px;
   color: #777777;
+  white-space: nowrap;
 }
 
 .tab-1 {
