@@ -9,7 +9,7 @@
 </template>
 
 <script>
-// import Cookies from 'js-cookie'
+import Cookies from 'js-cookie'
 export default {
   data () {
     return {
@@ -18,15 +18,14 @@ export default {
   },
   methods: {
     logOut () {
-      // Cookies.remove('token')
-      // Cookies.remove('first_name')
-      // Cookies.remove('last_name')
-      // Cookies.remove('email')
-      // Cookies.remove('id')
-      // Cookies.remove('emailVerified')
+      Cookies.remove('token')
+      Cookies.remove('first_name')
+      Cookies.remove('last_name')
+      Cookies.remove('email')
+      Cookies.remove('id')
+      Cookies.remove('emailVerified')
       this.$router.push('/login')
       this.$toast.show('Logged Out')
-      // this.$router.push('/login')
     }
   }
 
