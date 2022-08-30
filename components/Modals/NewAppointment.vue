@@ -105,7 +105,6 @@ export default {
 }
 
 .modal-2 {
-  /* margin-top: 5%; */
   background-color: white;
   width: 30%;
   height: fit-content;
