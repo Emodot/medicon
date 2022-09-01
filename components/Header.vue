@@ -274,10 +274,6 @@ export default {
   display: none;
 }
 
-/* .header-container {
-  width: 100%;
-} */
-
 }
 
 @media only screen and (max-width: 500px) {
