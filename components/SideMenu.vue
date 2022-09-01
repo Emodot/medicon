@@ -226,7 +226,6 @@ a.nuxt-link-exact-active .menu-text {
 
 .menu-text {
   color: rgba(255, 255, 255, 0.666);
-  /* opacity: 70%; */
   margin-left: 30px;
 }
 
